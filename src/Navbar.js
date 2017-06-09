@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -6,14 +7,15 @@ class Navbar extends Component {
     return (
       <div className="Navbar">
         <div className="Navbar-header">
-          <a className="Navbar-brand" href="/">Logo</a>
+          <a className="Navbar-brand text-title" href="/">Stamp</a>
         </div>
-        <ul className="Navbar-nav mx-auto">
+        <ul className="Navbar-nav ml-auto">
           <li><a href="">About</a></li>
           <li><a href="">Integrations</a></li>
           <li><a href="">Pricing</a></li>
           <li><a href="">Contacts</a></li>
         </ul>
+        <Button class="ml-auto"/>
       </div>
     );
   }

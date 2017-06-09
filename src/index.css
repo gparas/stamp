@@ -32,7 +32,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
-  color: #9b9b9b;
+  color: #9B9B9B;
   background-color: #fff;
   direction: ltr;
 }
@@ -55,8 +55,28 @@ hr.dashed{border-top-style: dashed;}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
+  color: #1A1A1A;
   margin-top: 0;
   margin-bottom: .5em;
+}
+
+h1{
+  font-size: 72px;
+  line-height: 82px;
+  letter-spacing: -4px;
+}
+
+h2{
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+
+h3{
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 p {
@@ -68,14 +88,14 @@ p {
 /* Links */
 
 a {
-  color: #2c99ed;
+  color: #2C99ED;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover{
-  color: #1280d4;
+  color: #0072CA;
   text-decoration: none;
 }
 
