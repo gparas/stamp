@@ -32,7 +32,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
-  color: #9B9B9B;
+  color: #1A1A1A;
   background-color: #fff;
   direction: ltr;
 }
@@ -55,7 +55,7 @@ hr.dashed{border-top-style: dashed;}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
-  color: #1A1A1A;
+  color: inherit;
   margin-top: 0;
   margin-bottom: .5em;
 }
@@ -146,6 +146,10 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+img.img-circle{
+  border-radius: 50%;
 }
 
 /* Hide the overflow in IE. */

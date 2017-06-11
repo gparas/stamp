@@ -1,0 +1,10 @@
+.Card{
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 10px 0 rgba(155,130,130,0.15);
+  border-radius: 4px;
+}
+
+.Card > *:last-child{
+  margin-bottom: 0;
+}

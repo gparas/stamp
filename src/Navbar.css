@@ -1,7 +1,7 @@
 .Navbar{
   display: flex;
   align-items: center;
-  padding: .75em 1em;
+  padding: 0 1em;
   // box-shadow: 0px 1px 1px #F7F7F7;
 }
 
@@ -18,8 +18,10 @@
 
 .Navbar-nav > li > a{
   position: relative;
-  display: block;
-  padding: 1em;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0 1em;
   color: #1A1A1A;
 }
 
@@ -29,7 +31,7 @@
   position: absolute;
   left: 15px;
   right: calc(102% - 15px);
-  bottom: 12px;
+  bottom: 20px;
   height: 1px;
   background-color: currentColor;
   transition: .3s ease-in-out;
