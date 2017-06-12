@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
+
 import Navbar from './Navbar';
-import Headline from './Headline';
+import Home from './Home';
+import Testimonials from './Testimonials';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <Headline class="bg-info" />
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Route exact path="/" component={Home}/>
+          <Route path="/testimonials" component={Testimonials}/>
+        </div>
+      </Router>
     );
   }
 }
