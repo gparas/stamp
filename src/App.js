@@ -5,8 +5,8 @@ import {
 } from 'react-router-dom'
 
 import Navbar from './Navbar';
-import Testimonials from './Testimonials';
-import HappyCustomers from './testimonials/HappyCustomers';
+// import HappyCustomers from './testimonials/HappyCustomers';
+import OurClients from './testimonials/OurClients';
 
 class App extends Component {
   constructor(props) {
@@ -23,6 +23,7 @@ class App extends Component {
       })
   }
   render() {
+    const person = this.state.person;
     return (
       <Router>
         <div className="App">
@@ -31,7 +32,7 @@ class App extends Component {
             <h1>Welcome</h1>
           )}/>
           <Route path="/testimonials" render={() => (
-            <HappyCustomers user={this.state.person} />
+            <OurClients user={person} />
           )}/>
         </div>
       </Router>
