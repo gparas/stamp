@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom'
 
 import Navbar from './Navbar';
-import Home from './Home';
 import Testimonials from './Testimonials';
 
 class App extends Component {
@@ -14,7 +13,9 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
-          <Route exact path="/" component={Home}/>
+          <Route exact={true} path="/" render={() => (
+            <h1>Welcome</h1>
+          )}/>
           <Route path="/testimonials" component={Testimonials}/>
         </div>
       </Router>
