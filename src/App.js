@@ -8,6 +8,20 @@ import Navbar from './Navbar';
 import Testimonials from './Testimonials';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {person: []};
+  }
+
+  componentDidMount() {
+    fetch('https://randomuser.me/api/?inc=name,picture,email')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({ person: data.results })
+      })
+  }
+
   render() {
     return (
       <Router>
@@ -16,7 +30,9 @@ class App extends Component {
           <Route exact={true} path="/" render={() => (
             <h1>Welcome</h1>
           )}/>
-          <Route path="/testimonials" component={Testimonials}/>
+          <Route path="/testimonials" render={() => (
+            <Testimonials user={this.state.person} />
+          )}/>
         </div>
       </Router>
     );
