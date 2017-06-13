@@ -10,10 +10,10 @@ class OurClients extends Component {
       return (
         <li key={i}>
           <div className="Card text-center">
-            <div className="mb-md">
+            <div className="mb-xl">
               <img className="img-circle" src={item.picture.medium} alt={item.name.first} />
             </div>
-            <p className="mb-lg">Uiio has eased the client intake process and allowed me ditch that constant stream of emails that build up from clients during a project</p>
+            <p className="mb-xl">Uiio has eased the client intake process and allowed me ditch that constant stream of emails that build up from clients during a project</p>
             <div className="text-name">{item.name.first} {item.name.last}</div>
             <div>Head Developer</div>
           </div>
@@ -23,8 +23,8 @@ class OurClients extends Component {
     return (
       <header className="Headline bg-warning">
         <div className="Container">
-          <h3 className="mb-xs mx-auto text-center">Our clients</h3>
-          <p className="mb-lg text-center">
+          <h3 className="mb-md mx-auto text-center">Our clients</h3>
+          <p className="mb-xxl text-center text-subheader">
             Choose amongst the free guided meditations on mindfulness, <br/>breathing, body scans.
           </p>
           <ul className="Grid">

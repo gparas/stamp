@@ -31,7 +31,7 @@ class HappyCustomers extends Component {
       <header className="Headline bg-info">
         <div className="Container">
           <h1 className="text-center text-white mb-xs">Happy Customers</h1>
-          <p className="text-subheader text-white text-center mb-lg">
+          <p className="text-subheader text-white text-center mb-xxl">
             Co-ordinate campaigns and product launches, with improved <br/>overall communication.
           </p>
           <ul className="Grid">
