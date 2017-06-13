@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import UserList from './UserList';
-import './Headline.css';
-import './Grid.css';
+import './css/Headline.css';
+import './css/Grid.css';
 
 class Headline extends Component {
   render() {

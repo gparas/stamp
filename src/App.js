@@ -6,6 +6,7 @@ import {
 
 import Navbar from './Navbar';
 import Testimonials from './Testimonials';
+import HappyCustomers from './testimonials/HappyCustomers';
 
 class App extends Component {
   constructor(props) {
@@ -15,13 +16,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://randomuser.me/api/?inc=name,picture,email')
+    fetch('https://randomuser.me/api/?results=3&nat=gb,us,es')
       .then(res => res.json())
       .then(data => {
         this.setState({ person: data.results })
       })
   }
-
   render() {
     return (
       <Router>
@@ -31,7 +31,7 @@ class App extends Component {
             <h1>Welcome</h1>
           )}/>
           <Route path="/testimonials" render={() => (
-            <Testimonials user={this.state.person} />
+            <HappyCustomers user={this.state.person} />
           )}/>
         </div>
       </Router>
