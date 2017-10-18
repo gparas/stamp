@@ -3,7 +3,12 @@
 // Set the page width, and override it for fixed navbars in media queries.
 
 .page-width {
-  @include make-container();
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $space-md;
+  padding-left:  $space-md;
+  width: 100%;
   @include make-container-max-widths();
 }
 
@@ -12,12 +17,22 @@
 //
 // 
 
-.section-hero{
-  padding-top: $space-xl;
-  padding-bottom: $space-xl;
+.hero-section,
+.main-section{
+  position: relative;
 }
 
-.section-main{
+.hero-section{
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+
+  @include media-breakpoint-up(md){
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+}
+
+.main-section{
   padding-top: $space-lg;
   padding-bottom: $space-lg;
 }

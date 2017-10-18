@@ -12,6 +12,7 @@ $card-spacer: $space-md;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
+  margin-bottom: $card-spacer;
   @include border-radius($border-radius);
 }
 

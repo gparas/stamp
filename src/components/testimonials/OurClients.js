@@ -28,14 +28,14 @@ const testimonials = function () {
 
   return items.map((item, i) =>
     <div key={i} className="grid-item width-md-1-3">
-      <div className="card mb-sm">
+      <div className="card">
         <div className="card-body">
           <img className="avatar mb-md" src={item.avatar} with="80" height="80" alt={item.name}/>
           <p>{item.text}</p>
         </div>
         <div className="card-footer card-footer-flush">
-          <div className="text-name">{item.name}</div>
-          <div className="text-caption">{item.caption}</div>
+          <div className="headline-text">{item.name}</div>
+          <div className="text-small">{item.caption}</div>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ const testimonials = function () {
 class OurClients extends Component {
   render() {
     return (
-      <section className="section-hero bg-warning">
+      <section className="main-section bg-muted">
         <div className="page-width text-center">
           <h3>Our Clients</h3>
           <p className="text-center mb-lg">

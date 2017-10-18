@@ -35,7 +35,7 @@ class Navbar extends Component {
     return (
       <header className="navbar">
         <a className="navbar-brand">
-          <Logo/>
+          <Logo className="text-secondary"/>
         </a>
         <div className={`navbar-collapse ${toggleMenu ? 'show' : ''}`}>
           <ul className="navbar-nav">

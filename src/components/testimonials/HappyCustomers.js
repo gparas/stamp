@@ -31,15 +31,15 @@ const testimonials = function () {
 
   return items.map((item, i) =>
     <div key={i} className="grid-item width-md-1-3">
-      <div className="card mb-sm">
+      <div className="card">
         <div className="card-body">
           <div className="media mb-md">
             <div className="media-left">
               <img className="avatar" src={item.avatar} with="48" height="48" alt={item.name}/>
             </div>
             <div className="media-body">
-              <div className="text-name">{item.name}</div>
-              <div className="text-caption text-muted">{item.caption}</div>
+              <div className="headline-text">{item.name}</div>
+              <div className="text-small text-muted">{item.caption}</div>
             </div>
           </div>
           <p>{item.text}</p>
@@ -52,11 +52,16 @@ const testimonials = function () {
 
 class HappyCustomers extends Component {
   render() {
+    const bgImage = {
+      backgroundImage: 'url(https://images.unsplash.com/photo-1469487885741-33b975dd5bbc?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb)',
+      opacity: .5
+    };
     return (
-      <section className="section-hero bg-accent">
+      <section className="hero-section bg-secondary">
+        <div className="bg-image" style={bgImage}></div>
         <div className="page-width">
           <h1 className="text-white text-center">Happy Customers</h1>
-          <p className="text-subheader text-white text-center mb-lg text-faded">
+          <p className="text-lead text-white text-center mb-lg text-faded">
             Co-ordinate campaigns and product launches, with improved overall communication.
           </p>
           <div className="grid">

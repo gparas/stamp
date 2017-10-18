@@ -3,57 +3,70 @@
 //
 
 h1, .h1 { 
-  font-size: 72px;
-  line-height: 82px;
-  letter-spacing: -3px;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.9px;
 }
 
 h2, .h2 { 
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: -3px;
+  letter-spacing: -0.9px;
 }
 
 h3, .h3 { 
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.9px;
 }
+
+h4, .h4 {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.9px;
+}
+
+h5, .h5 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.9px;
+}
+
 
 // Type display classes
 
-.text-hero {
-  font-size: 96px;
-  line-height: 100px;
-  letter-spacing: -6px;
+.hero-text{
+  font-size: 64px;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+  line-height: 84px;
+  letter-spacing: -0.9px;
 }
 
-.text-subheader {
-  font-size: 22px;
-  line-height: 34px;
-}
-
-.text-title {
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: -1px;
-}
-
-.text-small {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.text-name {
+.headline-text{
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
-.text-caption {
+.headline-text-small{
+  font-size: 12px;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.text-small{
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+
+.text-lead{
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.9px;
 }
