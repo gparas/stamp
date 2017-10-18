@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import wellkerned from './wellkerned.jpg';
 import blumenfeld from './blumenfeld.jpg';
 import davemorin from './davemorin.jpg';
+import heroImg from './hero.jpg';
 
 const testimonials = function () {
   const items = [
@@ -53,11 +54,11 @@ const testimonials = function () {
 class HappyCustomers extends Component {
   render() {
     const bgImage = {
-      backgroundImage: 'url(https://images.unsplash.com/photo-1469487885741-33b975dd5bbc?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb)',
-      opacity: .5
+      backgroundImage: `url(${heroImg})`,
+      opacity: 0.6
     };
     return (
-      <section className="hero-section bg-secondary">
+      <section className="hero-section bg-dark">
         <div className="bg-image" style={bgImage}></div>
         <div className="page-width">
           <h1 className="text-white text-center">Happy Customers</h1>

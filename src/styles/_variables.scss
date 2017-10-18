@@ -2,23 +2,15 @@
 //
 //
 
-$gray:        #7c7c7c;
-$gray-dark:   #343434;
-$gray-light:  #b8b8b8;
-
 $theme-colors: (
-  primary: #1972a4,
-  secondary: $gray-dark,
+  primary: #f8bf50,
   success: #40be65,
-  info: #0072ca,
+  // info: #0072ca,
   warning: #edc054,
-  danger: #fe4f20
-);
-
-$bg-colors: (
-  primary: theme-color("primary"),
-  secondary: $gray-dark,
-  muted: #f2f7f9
+  danger: #fe4f20,
+  dark: #110f10,
+  light: #faf6ed,
+  muted: #b8b8b8
 );
 
 
@@ -98,7 +90,7 @@ $border-radius-sm:       2px;
 // Settings for the `<body>` element.
 
 $body-bg:                   #fff;
-$body-color:                $gray;
+$body-color:                theme-color('dark');
 
 
 // Links
@@ -119,4 +111,4 @@ $line-height-base:            26px;
 
 $headings-font-family:   inherit;
 $headings-font-weight:   700;
-$headings-color:         $gray-dark;
+$headings-color:         theme-color('dark');

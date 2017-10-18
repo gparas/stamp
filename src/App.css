@@ -18,13 +18,13 @@ body {
   font-size: 16px;
   font-weight: normal;
   line-height: 26px;
-  color: #7c7c7c;
+  color: #110f10;
   background-color: #fff; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
-  color: #343434;
+  color: #110f10;
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -33,12 +33,12 @@ p {
   margin-bottom: 24px; }
 
 a {
-  color: #1972a4;
+  color: #f8bf50;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0f4462;
+    color: #f2a30a;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -80,7 +80,7 @@ textarea {
 
 .navbar-brand {
   display: flex;
-  color: #343434;
+  color: #110f10;
   padding: 0 16px; }
   .navbar-brand:focus, .navbar-brand:hover {
     text-decoration: none; }
@@ -110,7 +110,7 @@ textarea {
       flex-direction: row; } }
   .navbar-nav .nav-link {
     display: flex;
-    color: #343434;
+    color: #110f10;
     padding: 8px 16px; }
     .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
       text-decoration: none; }
@@ -147,21 +147,21 @@ h5, .h5 {
 .hero-text {
   font-size: 64px;
   font-weight: 700;
-  color: #343434;
+  color: #110f10;
   line-height: 84px;
   letter-spacing: -0.9px; }
 
 .headline-text {
   font-size: 14px;
   font-weight: 700;
-  color: #343434;
+  color: #110f10;
   letter-spacing: 1.5px;
   text-transform: uppercase; }
 
 .headline-text-small {
   font-size: 12px;
   font-weight: 700;
-  color: #343434;
+  color: #110f10;
   letter-spacing: 1.3px;
   text-transform: uppercase; }
 
@@ -262,22 +262,46 @@ h5, .h5 {
   padding-right: 16px; }
 
 .bg-primary {
-  background-color: #1972a4 !important; }
+  background-color: #f8bf50 !important; }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #125378 !important; }
+  background-color: #f6ad1f !important; }
 
-.bg-secondary {
-  background-color: #343434 !important; }
+.bg-success {
+  background-color: #40be65 !important; }
 
-a.bg-secondary:focus, a.bg-secondary:hover {
-  background-color: #1b1b1b !important; }
+a.bg-success:focus, a.bg-success:hover {
+  background-color: #339851 !important; }
+
+.bg-warning {
+  background-color: #edc054 !important; }
+
+a.bg-warning:focus, a.bg-warning:hover {
+  background-color: #e8af26 !important; }
+
+.bg-danger {
+  background-color: #fe4f20 !important; }
+
+a.bg-danger:focus, a.bg-danger:hover {
+  background-color: #ea3201 !important; }
+
+.bg-dark {
+  background-color: #110f10 !important; }
+
+a.bg-dark:focus, a.bg-dark:hover {
+  background-color: black !important; }
+
+.bg-light {
+  background-color: #faf6ed !important; }
+
+a.bg-light:focus, a.bg-light:hover {
+  background-color: #efe2c5 !important; }
 
 .bg-muted {
-  background-color: #f2f7f9 !important; }
+  background-color: #b8b8b8 !important; }
 
 a.bg-muted:focus, a.bg-muted:hover {
-  background-color: #cfe2e9 !important; }
+  background-color: #9f9f9f !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -380,28 +404,16 @@ a.bg-muted:focus, a.bg-muted:hover {
   color: #fff !important; }
 
 .text-primary {
-  color: #1972a4 !important; }
+  color: #f8bf50 !important; }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #125378 !important; }
-
-.text-secondary {
-  color: #343434 !important; }
-
-a.text-secondary:focus, a.text-secondary:hover {
-  color: #1b1b1b !important; }
+  color: #f6ad1f !important; }
 
 .text-success {
   color: #40be65 !important; }
 
 a.text-success:focus, a.text-success:hover {
   color: #339851 !important; }
-
-.text-info {
-  color: #0072ca !important; }
-
-a.text-info:focus, a.text-info:hover {
-  color: #005597 !important; }
 
 .text-warning {
   color: #edc054 !important; }
@@ -415,8 +427,23 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #ea3201 !important; }
 
+.text-dark {
+  color: #110f10 !important; }
+
+a.text-dark:focus, a.text-dark:hover {
+  color: black !important; }
+
+.text-light {
+  color: #faf6ed !important; }
+
+a.text-light:focus, a.text-light:hover {
+  color: #efe2c5 !important; }
+
 .text-muted {
   color: #b8b8b8 !important; }
+
+a.text-muted:focus, a.text-muted:hover {
+  color: #9f9f9f !important; }
 
 .text-faded {
   opacity: 0.6 !important; }

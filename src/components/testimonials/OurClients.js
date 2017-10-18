@@ -45,7 +45,7 @@ const testimonials = function () {
 class OurClients extends Component {
   render() {
     return (
-      <section className="main-section bg-muted">
+      <section className="main-section bg-light">
         <div className="page-width text-center">
           <h3>Our Clients</h3>
           <p className="text-center mb-lg">

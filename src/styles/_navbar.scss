@@ -13,7 +13,7 @@ $navbar-height: 72px;
 
 .navbar-brand{
   display: flex;
-  color: $gray-dark;
+  color: theme-color('dark');
   padding: 0 $space-sm;
 
   @include hover-focus {
@@ -52,7 +52,7 @@ $navbar-height: 72px;
 
   .nav-link {
     display: flex;
-    color: $gray-dark;
+    color: theme-color('dark');
     padding: $space-xs $space-sm;
 
     @include hover-focus {
