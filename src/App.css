@@ -9,7 +9,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased; }
 
 body {
   margin: 0;
@@ -229,6 +230,13 @@ h3, .h3 {
     border-top: 0;
     margin-top: -32px; }
 
+.media {
+  display: flex;
+  align-items: center; }
+
+.media-left {
+  padding-right: 16px; }
+
 .bg-primary {
   background-color: #2c99ed !important; }
 
@@ -300,6 +308,9 @@ a.bg-dark:focus, a.bg-dark:hover {
 
 .mb-xl {
   margin-bottom: 128px; }
+
+.avatar {
+  border-radius: 100px; }
 
 .text-justify {
   text-align: justify !important; }
@@ -412,6 +423,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 .text-muted {
   color: #9b9b9b !important; }
+
+.text-faded {
+  opacity: 0.6 !important; }
 
 .text-hide {
   font: 0/0 a;
