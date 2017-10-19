@@ -1,0 +1,17 @@
+@function color-schemes(
+  $name: 'palette-1',
+  $variant: 'primary',
+  $opacity: 1
+) {
+  $color: null;
+  
+  // Get the color spectrum
+  $color-spectrum: map-get($color-schemes, $name);
+  
+  // Get the color variant
+  @if $color-spectrum {
+    $color: map-get($color-spectrum, $variant);
+  }
+  
+  @return $color;
+}

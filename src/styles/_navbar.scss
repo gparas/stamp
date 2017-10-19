@@ -6,7 +6,7 @@ $navbar-height: 72px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: $space-xs 0;
+  padding: $space-xs $space-sm;
   border-bottom: $border-width solid $border-color;
   min-height: $navbar-height;
 }
@@ -14,7 +14,7 @@ $navbar-height: 72px;
 .navbar-brand{
   display: flex;
   color: theme-color('dark');
-  padding: 0 $space-sm;
+  padding-right: $space-sm;
 
   @include hover-focus {
     text-decoration: none;
