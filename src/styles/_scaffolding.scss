@@ -83,6 +83,8 @@ a:not([href]):not([tabindex]) {
 //
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
   border-style: none; // Remove the border on images inside links in IE 10-.
 }

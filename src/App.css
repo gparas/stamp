@@ -53,6 +53,8 @@ a:not([href]):not([tabindex]) {
     outline: 0; }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
   border-style: none; }
 
@@ -507,12 +509,16 @@ h5, .h5 {
   margin-left: -12px; }
 
 .grid-item {
-  display: flex;
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 12px;
   padding-left: 12px; }
+
+@media (min-width: 768px) {
+  .width-md-1-2 {
+    flex: 0 0 50%;
+    max-width: 50%; } }
 
 @media (min-width: 768px) {
   .width-md-1-3 {
@@ -683,10 +689,10 @@ a.bg-muted:focus, a.bg-muted:hover {
   .text-xl-center {
     text-align: center !important; } }
 
-.text-light {
+.font-weight-light {
   font-weight: 300 !important; }
 
-.text-bold {
+.font-weight-bold {
   font-weight: bold !important; }
 
 .text-white {
@@ -743,3 +749,21 @@ a.text-muted:focus, a.text-muted:hover {
   text-shadow: none;
   background-color: transparent;
   border: 0; }
+
+.d-flex {
+  display: flex !important; }
+
+.align-items-start {
+  align-items: flex-start !important; }
+
+.align-items-end {
+  align-items: flex-end !important; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.align-items-baseline {
+  align-items: baseline !important; }
+
+.align-items-stretch {
+  align-items: stretch !important; }

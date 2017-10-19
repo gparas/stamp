@@ -47,8 +47,13 @@
 }
 
 .grid-item{
-  display: flex;
   @include make-col-ready();
+}
+
+.width-md-1-2{
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
+  }
 }
 
 .width-md-1-3{
