@@ -32,10 +32,12 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   color: $headings-color;
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: -1px;
 }
 
 p {

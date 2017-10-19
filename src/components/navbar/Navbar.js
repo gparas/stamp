@@ -42,7 +42,7 @@ class Navbar extends Component {
             {navItem()}
           </ul>
         </div>
-        <button onClick={this.toggleMenu} className="btn btn-primary">text</button>
+        <button onClick={this.toggleMenu} className="btn btn-primary">Sign In</button>
       </header>
     );
   }
