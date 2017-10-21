@@ -9,7 +9,7 @@ $color-palette: 'palette-13';
 
 $theme-colors: (
   success: #40be65,
-  // info: #0072ca,
+  info: #1e87f0,
   warning: #edc054,
   danger: #fe4f20,
   light: color-schemes($color-palette, 'light'),
@@ -102,7 +102,7 @@ $body-color:                theme-color('dark');
 //
 // Style anchor elements.
 
-$link-color:            theme-color("primary");
+$link-color:            theme-color("info");
 $link-hover-color:      darken($link-color, 15%);
 
 

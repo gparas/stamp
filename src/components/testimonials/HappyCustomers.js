@@ -31,7 +31,7 @@ const testimonials = function () {
   ];
 
   return items.map((item, i) =>
-    <div key={i} className="grid-item width-md-1-3">
+    <div key={i} className="grid-item width-md-1-3 d-flex">
       <div className="card">
         <div className="card-body">
           <div className="media mb-md">
