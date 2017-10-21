@@ -50,14 +50,12 @@
   @include make-col-ready();
 }
 
-.width-md-1-2{
-  @include media-breakpoint-up(md) {
-    @include make-col(6);
-  }
-}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.width-md-1-3{
-  @include media-breakpoint-up(md) {
-    @include make-col(4);
+    .width#{$infix}-1-2 { @include make-col(6); }
+    .width#{$infix}-1-3 { @include make-col(4); }
+    // .order#{$infix}-1  {order: 1;}
   }
 }

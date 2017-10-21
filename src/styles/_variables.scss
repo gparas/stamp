@@ -18,6 +18,29 @@ $theme-colors: (
   muted: color-schemes($color-palette, 'muted')
 );
 
+$bg-colors: (
+  light: theme-color('light'),
+  dark: theme-color('dark'),
+  primary: theme-color('primary')
+);
+
+$text-colors: (
+  success: theme-color('success'),
+  info: theme-color('info'),
+  warning: theme-color('warning'),
+  danger: theme-color('danger'),
+  primary: theme-color('primary'),
+  muted: theme-color('muted')
+);
+
+$btn-colors: (
+  success: theme-color('success'),
+  info: theme-color('info'),
+  warning: theme-color('warning'),
+  danger: theme-color('danger'),
+  primary: theme-color('primary')
+);
+
 
 // Options
 //

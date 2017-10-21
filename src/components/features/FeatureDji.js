@@ -9,7 +9,10 @@ class FeatureDji extends Component {
       <section className="main-section">
         <div className="page-width">
           <div className="grid align-items-center">
-            <div className="grid-item width-md-1-2">
+            <div className="grid-item width-lg-1-2">
+              <img src={dji} alt="dji"/>
+            </div>
+            <div className="grid-item width-lg-1-2">
               <h2 className="font-weight-light">DJI Controllers Keeps Reality Closer Than Ever</h2>
               <p>Living in today’s metropolitan world of cellular phones, mobile computers and other high-tech gadgets is not just hectic but very impersonal. </p>
               <div className="grid">  
@@ -26,9 +29,6 @@ class FeatureDji extends Component {
                   <a href="https://medium.com/@david.gilbertson/icons-as-react-components-de3e33cb8792">Read more</a>
                 </div>
               </div>
-            </div>
-            <div className="grid-item width-md-1-2">
-              <img src={dji} alt="dji"/>
             </div>
           </div>
         </div>
