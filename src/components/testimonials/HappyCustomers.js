@@ -36,7 +36,7 @@ const testimonials = function () {
         <div className="card-body">
           <div className="media mb-md">
             <div className="media-left">
-              <img className="avatar" src={item.avatar} with="48" height="48" alt={item.name}/>
+              <img className="avatar avatar-sm" src={item.avatar} alt={item.name}/>
             </div>
             <div className="media-body">
               <div className="headline-text">{item.name}</div>

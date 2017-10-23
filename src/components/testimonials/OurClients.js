@@ -30,7 +30,7 @@ const testimonials = function () {
     <div key={i} className="grid-item width-md-1-3 d-flex">
       <div className="card">
         <div className="card-body">
-          <img className="avatar mb-md" src={item.avatar} with="80" height="80" alt={item.name}/>
+          <img className="avatar avatar-lg mb-md" src={item.avatar} alt={item.name}/>
           <p>{item.text}</p>
         </div>
         <div className="card-footer card-footer-flush">
