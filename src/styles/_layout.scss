@@ -6,8 +6,8 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $space-md;
-  padding-left:  $space-md;
+  padding-right: theme-spaces(4);
+  padding-left:  theme-spaces(4);
   width: 100%;
   @include make-container-max-widths();
 }
@@ -17,24 +17,8 @@
 //
 // 
 
-.hero-section,
-.main-section{
+.section{
   position: relative;
-}
-
-.hero-section{
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
-
-  @include media-breakpoint-up(md){
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
-  }
-}
-
-.main-section{
-  padding-top: $space-lg;
-  padding-bottom: $space-lg;
 }
 
 

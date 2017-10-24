@@ -6,7 +6,7 @@ $navbar-height: 80px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: $space-sm;
+  padding: theme-spaces(2) theme-spaces(3);
   border-bottom: $border-width solid $border-color;
   min-height: $navbar-height;
 }
@@ -14,7 +14,7 @@ $navbar-height: 80px;
 .navbar-brand{
   display: flex;
   color: theme-color('dark');
-  padding-right: $space-sm;
+  padding-right: theme-spaces(3);
 
   @include hover-focus {
     text-decoration: none;
@@ -53,7 +53,7 @@ $navbar-height: 80px;
   .nav-link {
     display: flex;
     color: theme-color('dark');
-    padding: $space-xs $space-sm;
+    padding: $nav-link-padding-y $nav-link-padding-x;
 
     @include hover-focus {
       text-decoration: none;
@@ -62,6 +62,6 @@ $navbar-height: 80px;
 }
 
 .navbar-text{
-  padding: $space-xs $space-sm;
+  padding: $nav-link-padding-y $nav-link-padding-x;
   margin: 0;
 }

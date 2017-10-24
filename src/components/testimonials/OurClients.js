@@ -30,7 +30,7 @@ const testimonials = function () {
     <div key={i} className="grid-item width-md-1-3 d-flex">
       <div className="card">
         <div className="card-body">
-          <img className="avatar avatar-lg mb-md" src={item.avatar} alt={item.name}/>
+          <img className="avatar avatar-lg mb-4" src={item.avatar} alt={item.name}/>
           <p>{item.text}</p>
         </div>
         <div className="card-footer card-footer-flush">
@@ -45,7 +45,7 @@ const testimonials = function () {
 class OurClients extends Component {
   render() {
     return (
-      <section className="main-section bg-light">
+      <section className="section py-5 bg-light">
         <div className="page-width text-center">
           <h3>Our Clients</h3>
           <p className="text-center mb-lg">

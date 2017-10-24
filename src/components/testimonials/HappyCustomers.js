@@ -34,7 +34,7 @@ const testimonials = function () {
     <div key={i} className="grid-item width-md-1-3 d-flex">
       <div className="card">
         <div className="card-body">
-          <div className="media mb-md">
+          <div className="media mb-3">
             <div className="media-left">
               <img className="avatar avatar-sm" src={item.avatar} alt={item.name}/>
             </div>
@@ -58,7 +58,7 @@ class HappyCustomers extends Component {
       opacity: 0.6
     };
     return (
-      <section className="hero-section bg-dark">
+      <section className="section py-5 bg-dark">
         <div className="bg-image" style={bgImage}></div>
         <div className="page-width">
           <h1 className="text-white text-center">Happy Customers</h1>

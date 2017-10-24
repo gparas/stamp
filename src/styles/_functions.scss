@@ -15,3 +15,8 @@
   
   @return $color;
 }
+
+
+@function theme-spaces($key: "primary") {
+  @return map-get($spaces, $key);
+}

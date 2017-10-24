@@ -58,13 +58,17 @@ $enable-print-styles:       true;
 // Spacing
 //
 // Mostly focused on spacing.
-$spacer:                 6px; 
+$space: 4px;
 
-$space-xs:               $spacer;
-$space-sm:               $space-xs * 2;
-$space-md:               $space-sm * 2;
-$space-lg:               $space-md * 2;
-$space-xl:               $space-lg * 2;
+$spaces: (
+  0: 0,
+  1: $space,
+  2: ($space * 2),
+  3: ($space * 4),
+  4: ($space * 6),
+  5: ($space * 16),
+  6: ($space * 32),
+);
 
 
 // Grid breakpoints
@@ -98,7 +102,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12;
-$grid-gutter-width: $space-md;
+$grid-gutter-width: theme-spaces(4);
 
 
 // Components
@@ -135,7 +139,7 @@ $link-hover-color:      darken($link-color, 15%);
 
 $font-family-base:       'Roboto', sans-serif;
 $font-size-base:         16px;
-$line-height-base:       26px;
+$line-height-base:       1.5;
 
 $headings-font-family:   inherit;
 $headings-font-weight:   700;
@@ -146,8 +150,8 @@ $headings-color:         theme-color('dark');
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-y:         10px;
-$btn-padding-x:         $space-md;
+$btn-padding-x:         theme-spaces(4);
+$btn-padding-y:         $btn-padding-x / 2;
 $btn-line-height:       $line-height-base;
 
 $btn-box-shadow:        inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075);
@@ -157,5 +161,11 @@ $btn-active-box-shadow: inset 0 3px 5px rgba($black,.125);
 $btn-border-radius:     $border-radius;
 
 $btn-transition:        background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+
+// Navs
+
+$nav-link-padding-x:            theme-spaces(3);
+$nav-link-padding-y:            $nav-link-padding-x / 2;
 
 

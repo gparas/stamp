@@ -1,15 +1,43 @@
-// Margin
+// 
+// Paddings
+// 
 
-.mb-0  { margin-bottom: 0px; }
-.mb-xs { margin-bottom: $space-xs }
-.mb-sm { margin-bottom: $space-sm }
-.mb-md { margin-bottom: $space-md }
-.mb-lg { margin-bottom: $space-lg }
-.mb-xl { margin-bottom: $space-xl }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.mt-0  { margin-top: 0px; }
-.mt-xs { margin-top: $space-xs }
-.mt-sm { margin-top: $space-sm }
-.mt-md { margin-top: $space-md }
-.mt-lg { margin-top: $space-lg }
-.mt-xl { margin-top: $space-xl }
+    @each $size, $length in $spaces {
+
+      .p#{$infix}-#{$size} { padding: $length !important; }
+      .pt#{$infix}-#{$size},
+      .py#{$infix}-#{$size} {
+        padding-top: $length !important;
+      }
+      .pb#{$infix}-#{$size},
+      .py#{$infix}-#{$size} {
+        padding-bottom: $length !important;
+      }
+    }
+  }
+}
+
+
+// 
+// Margins
+// 
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $length in $spaces {
+
+      .mt#{$infix}-#{$size}{
+        margin-top: $length !important;
+      }
+      .mb#{$infix}-#{$size}{
+        margin-bottom: $length !important;
+      }
+    }
+  }
+}
