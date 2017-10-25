@@ -79,18 +79,32 @@ a:not([href]):not([tabindex]) {
 
 
 //
-// Images and content
+// Embedded content
 //
 
-img {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+audio,
+canvas,
+img,
+video {
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
-  border-style: none; // Remove the border on images inside links in IE 10-.
+}
+
+img {
+  border-style: none;
 }
 
 svg:not(:root) {
-  overflow: hidden; // Hide the overflow in IE
+  overflow: hidden;
 }
 
 
