@@ -10,7 +10,7 @@
   vertical-align: middle;
   user-select: none;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 0;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 

@@ -6,8 +6,8 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  padding-right: theme-spaces(4);
-  padding-left:  theme-spaces(4);
+  padding-right: theme-spaces(3);
+  padding-left:  theme-spaces(3);
   width: 100%;
   @include make-container-max-widths();
 }

@@ -15,9 +15,9 @@ const Icons = (props) => {
       height={size}
       viewBox="0 0 24 24"
       stroke={color}
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
       fill="none"
       {...otherProps}
     >
@@ -28,13 +28,13 @@ const Icons = (props) => {
 
 Icons.propTypes = {
   color: PropTypes.string,
-  icon: PropTypes.object,
+  icon: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
 Icons.defaultProps = {
   color: 'currentColor',
-  size: '14'
+  size: '24'
 };
 
 export default Icons;

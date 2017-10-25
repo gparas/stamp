@@ -32,6 +32,7 @@ class Navbar extends Component {
 
   render() {
     const {toggleMenu} = this.state;
+    const {xRay} = this.props;
     return (
       <header className="navbar">
         <a className="navbar-brand">
@@ -42,7 +43,7 @@ class Navbar extends Component {
             {navItem()}
           </ul>
         </div>
-        <button onClick={this.toggleMenu} className="btn btn-primary">Sign In</button>
+        <button onClick={xRay} className="btn btn-primary text-small">X - RAY</button>
       </header>
     );
   }

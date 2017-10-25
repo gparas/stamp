@@ -58,16 +58,16 @@ $enable-print-styles:       true;
 // Spacing
 //
 // Mostly focused on spacing.
-$space: 4px;
+$space: 8px;
 
 $spaces: (
   0: 0,
   1: $space,
   2: ($space * 2),
-  3: ($space * 4),
-  4: ($space * 6),
-  5: ($space * 16),
-  6: ($space * 32),
+  3: ($space * 3),
+  4: ($space * 4),
+  5: ($space * 8),
+  6: ($space * 16),
 );
 
 
@@ -93,7 +93,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1144px
 );
 
 
@@ -124,6 +124,15 @@ $border-radius-sm:       2px;
 $body-bg:                   #fff;
 $body-color:                theme-color('dark');
 
+$fontSizes: (
+  1: 64,
+  2: 48,
+  3: 32,
+  4: 24,
+  5: 16,
+  6: 14,
+);
+
 
 // Links
 //
@@ -139,7 +148,7 @@ $link-hover-color:      darken($link-color, 15%);
 
 $font-family-base:       'Roboto', sans-serif;
 $font-size-base:         16px;
-$line-height-base:       1.5;
+$line-height-base:       24px;
 
 $headings-font-family:   inherit;
 $headings-font-weight:   700;
@@ -150,7 +159,7 @@ $headings-color:         theme-color('dark');
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:         theme-spaces(4);
+$btn-padding-x:         theme-spaces(3);
 $btn-padding-y:         $btn-padding-x / 2;
 $btn-line-height:       $line-height-base;
 

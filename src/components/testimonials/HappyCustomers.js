@@ -39,7 +39,7 @@ const testimonials = function () {
               <img className="avatar avatar-sm" src={item.avatar} alt={item.name}/>
             </div>
             <div className="media-body">
-              <div className="headline-text">{item.name}</div>
+              <div className="text-headline">{item.name}</div>
               <div className="text-small text-muted">{item.caption}</div>
             </div>
           </div>

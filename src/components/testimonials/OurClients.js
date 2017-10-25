@@ -34,7 +34,7 @@ const testimonials = function () {
           <p>{item.text}</p>
         </div>
         <div className="card-footer card-footer-flush">
-          <div className="headline-text">{item.name}</div>
+          <div className="text-headline">{item.name}</div>
           <div className="text-small">{item.caption}</div>
         </div>
       </div>
@@ -48,7 +48,7 @@ class OurClients extends Component {
       <section className="section py-5 bg-light">
         <div className="page-width text-center">
           <h3>Our Clients</h3>
-          <p className="text-center mb-lg">
+          <p className="text-center mb-5">
             Choose amongst the free guided meditations on mindfulness, breathing, body scans.
           </p>
           <div className="grid">

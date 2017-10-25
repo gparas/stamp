@@ -6,8 +6,7 @@ $navbar-height: 80px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: theme-spaces(2) theme-spaces(3);
-  border-bottom: $border-width solid $border-color;
+  padding: theme-spaces(1) theme-spaces(3);
   min-height: $navbar-height;
 }
 
