@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Logo from './Logo';
 
 const navItem = function () {
@@ -32,9 +33,9 @@ class Navbar extends Component {
 
   render() {
     const {toggleMenu} = this.state;
-    const {xRay} = this.props;
+    const {xRay, navbarStyle, children} = this.props;
     return (
-      <header className="navbar">
+      <header className={`navbar ${navbarStyle}`}>
         <a className="navbar-brand">
           <Logo className="text-secondary"/>
         </a>
@@ -43,10 +44,17 @@ class Navbar extends Component {
             {navItem()}
           </ul>
         </div>
-        <button onClick={xRay} className="btn btn-primary text-small">X - RAY</button>
+        {
+          xRay == null ? children :
+          <button onClick={xRay} className="btn btn-primary text-small">X - RAY</button>
+        }
       </header>
     );
   }
 }
+
+Navbar.propTypes = {
+  navbarStyle: PropTypes.string
+};
 
 export default Navbar

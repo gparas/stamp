@@ -6,7 +6,7 @@ import dji from './dji.png';
 class FeatureDji extends Component {
   render() {
     return (
-      <section className="section py-4">
+      <section className="section py-5">
         <div className="page-width">
           <div className="grid align-items-center">
             <div className="grid-item width-lg-1-2">

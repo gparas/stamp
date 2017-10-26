@@ -22,10 +22,13 @@ class App extends Component {
     const {xRay} = this.state;
     return (
       <div className={`${xRay && 'x-ray'}`}>
-        <Navbar xRay={this.toggleXRay}/>
+        <Navbar navbarStyle="navbar-light" xRay={this.toggleXRay}/>
         <HappyCustomers/>
         <OurClients/>
         <FeatureDji/>
+        <Navbar navbarStyle="navbar-dark bg-dark py-4">
+          <button className="btn btn-outline-primary">Contact</button>
+        </Navbar>
       </div>
     );
   }

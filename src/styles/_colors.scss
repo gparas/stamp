@@ -1,39 +1,45 @@
 $color-schemes: (
+  luxury-1: (
+    muted: #a1a398,
+    dark: #222845,
+    primary: #c49f66,
+    light: #f2f2f2
+  ),
+  luxury-2: (
+    muted: #777777,
+    dark: #2f3945,
+    primary: #ab976b,
+    light: #f5f5f5
+  ),
+  luxury-3: (
+    muted: #a1a09a,
+    dark: #1e1e1e,
+    primary: #957e5f,
+    light: #e4e2d9
+  ),
+  fashion-1: (
+    muted: #939393,
+    dark: #2b2e34,
+    primary: #f7b1ac,
+    light: #fff1e9
+  ),
+  fashion-2: (
+    muted: #939393,
+    dark: #000000,
+    primary: #e80088,
+    light: #fff8ee
+  ),
   palette-1: (
-    muted: #B9B9B9,
-    dark: #262626,
-    primary: #7FA6F5,
-    light: #F0FAFB
+    muted: #b7b9b6,
+    dark: #3c3c38,
+    primary: #76b36d,
+    light: #ebebeb
   ),
-  palette-2: (
-    muted: #BAB5BC,
-    dark: #3B2E40,
-    primary: #F35E3E,
-    light: #FDEFEE
-  ),
-  palette-3: (
-    muted: #B9B9B9,
+  pastel: (
+    muted: #8c8c8c,
     dark: #333333,
-    primary: #1872A4,
-    light: #F2F7FA
-  ),
-  palette-4: (
-    muted: #B9B9B9,
-    dark: #121212,
-    primary: #48E4E1,
-    light: #FEFFF1
-  ),
-  palette-5: (
-    muted: #C4ADA5,
-    dark: #210E07,
-    primary: #AA522F,
-    light: #F9F3CF
-  ),
-  palette-6: (
-    muted: #B9B9B9,
-    dark: #615772,
-    primary: #F9A0BC,
-    light: #FEFBEC
+    primary: #fd6b54,
+    light: #fafaf7
   ),
   palette-7: (
     muted: #B9B9B9,

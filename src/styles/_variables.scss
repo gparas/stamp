@@ -5,7 +5,7 @@
 $white:    #fff;
 $black:    #000;
 
-$color-palette: 'palette-11';
+$color-palette: 'fashion-2';
 
 $theme-colors: (
   success: #40be65,
@@ -90,7 +90,7 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
+  sm: 544px,
   md: 720px,
   lg: 960px,
   xl: 1144px
@@ -138,7 +138,7 @@ $fontSizes: (
 //
 // Style anchor elements.
 
-$link-color:            theme-color("info");
+$link-color:            theme-color("primary");
 $link-hover-color:      darken($link-color, 15%);
 
 

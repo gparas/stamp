@@ -12,7 +12,6 @@ $navbar-height: 80px;
 
 .navbar-brand{
   display: flex;
-  color: theme-color('dark');
   padding-right: theme-spaces(3);
 
   @include hover-focus {
@@ -49,13 +48,33 @@ $navbar-height: 80px;
     flex-direction: row;
   }
 
-  .nav-link {
-    display: flex;
-    color: theme-color('dark');
+  li{
     padding: $nav-link-padding-y $nav-link-padding-x;
+  }
+
+  .nav-link {
+    position: relative;
+    display: block;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
 
     @include hover-focus {
       text-decoration: none;
+
+      &:before{
+        visibility: visible;
+        transform: scaleX(1);
+      }
     }
   }
 }
@@ -63,4 +82,41 @@ $navbar-height: 80px;
 .navbar-text{
   padding: $nav-link-padding-y $nav-link-padding-x;
   margin: 0;
+}
+
+
+// 
+// Navbar style
+//
+
+.navbar-light{
+  color: theme-color('dark');
+
+  .navbar-brand{
+    color: theme-color('dark');
+  }
+  .navbar-nav{
+    .nav-link{
+      color: theme-color('dark');
+      &:before{
+        background-color: theme-color('dark');
+      }
+    }
+  }
+}
+
+.navbar-dark{
+  color: $white;
+  
+  .navbar-brand{
+    color: $white;
+  }
+  .navbar-nav{
+    .nav-link{
+      color: $white;
+      &:before{
+        background-color: $white;
+      }
+    }
+  }
 }
