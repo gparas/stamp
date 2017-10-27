@@ -9,6 +9,7 @@
     @each $size, $length in $spaces {
 
       .p#{$infix}-#{$size} { padding: $length !important; }
+      
       .pt#{$infix}-#{$size},
       .py#{$infix}-#{$size} {
         padding-top: $length !important;
@@ -37,6 +38,14 @@
       }
       .mb#{$infix}-#{$size}{
         margin-bottom: $length !important;
+      }
+      .mr#{$infix}-auto,
+      .mx#{$infix}-auto {
+        margin-right: auto !important;
+      }
+      .ml#{$infix}-auto,
+      .mx#{$infix}-auto {
+        margin-left: auto !important;
       }
     }
   }

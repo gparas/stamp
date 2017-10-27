@@ -4,18 +4,21 @@
 @import 'styles/variables';
 @import 'styles/mixins';
 
-@import 'styles/scaffolding';
-@import 'styles/navbar';
-@import 'styles/typography';
 @import 'styles/buttons';
-@import 'styles/layout';
 @import 'styles/card';
+@import 'styles/layout';
 @import 'styles/media';
+@import 'styles/navbar';
+@import 'styles/scaffolding';
+@import 'styles/topbar';
+@import 'styles/typography';
 
 // utilities
 @import 'styles/background';
-@import 'styles/spacing';
-@import 'styles/images';
-@import 'styles/text';
+@import 'styles/display';
 @import 'styles/flex';
+@import 'styles/images';
+@import 'styles/spacing';
+@import 'styles/text';
+
 @import 'styles/xRay';

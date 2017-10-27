@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Topbar from './components/topbar/Topbar';
 import Navbar from './components/navbar/Navbar';
-import HappyCustomers from './components/testimonials/HappyCustomers';
+import Hero from './components/hero/Hero';
 import OurClients from './components/testimonials/OurClients';
-import FeatureDji from './components/features/FeatureDji';
+import Feature from './components/features/Feature';
 import './App.css';
 
 class App extends Component {
@@ -22,12 +23,13 @@ class App extends Component {
     const {xRay} = this.state;
     return (
       <div className={`${xRay && 'x-ray'}`}>
+        <Topbar/>
         <Navbar navbarStyle="navbar-light" xRay={this.toggleXRay}/>
-        <HappyCustomers/>
+        <Hero/>
         <OurClients/>
-        <FeatureDji/>
+        <Feature/>
         <Navbar navbarStyle="navbar-dark bg-dark py-4">
-          <button className="btn btn-outline-primary">Contact</button>
+          <button className="btn btn-outline-secondary">Contact</button>
         </Navbar>
       </div>
     );

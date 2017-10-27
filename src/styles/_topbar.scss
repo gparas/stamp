@@ -1,0 +1,15 @@
+//
+// Top Bar
+//
+
+$topbar-bg: theme-color('secondary');
+
+.topbar{
+  background-color: $topbar-bg;
+  @include color-yiq($topbar-bg);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: theme-spaces(1) theme-spaces(2);
+}

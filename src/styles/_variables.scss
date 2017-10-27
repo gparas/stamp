@@ -5,7 +5,7 @@
 $white:    #fff;
 $black:    #000;
 
-$color-palette: 'fashion-1';
+$color-palette: 'fashion-3';
 
 $theme-colors: (
   success: #40be65,
@@ -15,13 +15,15 @@ $theme-colors: (
   light: color-schemes($color-palette, 'light'),
   dark: color-schemes($color-palette, 'dark'),
   primary: color-schemes($color-palette, 'primary'),
+  secondary: color-schemes($color-palette, 'secondary'),
   muted: color-schemes($color-palette, 'muted')
 );
 
 $bg-colors: (
   light: theme-color('light'),
   dark: theme-color('dark'),
-  primary: theme-color('primary')
+  primary: theme-color('primary'),
+  secondary: theme-color('secondary')
 );
 
 $text-colors: (
@@ -30,6 +32,7 @@ $text-colors: (
   warning: theme-color('warning'),
   danger: theme-color('danger'),
   primary: theme-color('primary'),
+  secondary: theme-color('secondary'),
   muted: theme-color('muted')
 );
 
@@ -38,7 +41,8 @@ $btn-colors: (
   info: theme-color('info'),
   warning: theme-color('warning'),
   danger: theme-color('danger'),
-  primary: theme-color('primary')
+  primary: theme-color('primary'),
+  secondary: theme-color('secondary')
 );
 
 
@@ -159,7 +163,9 @@ $headings-color:         theme-color('dark');
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
+$btn-height:            $space * 6;
 $btn-border-width:      1px;
+$btn-font-weight:       500;
 
 $btn-padding-x:         theme-spaces(3);
 $btn-padding-y:         ($btn-padding-x / 2) - $btn-border-width;

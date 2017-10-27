@@ -1,7 +1,6 @@
 @function color-schemes(
   $name: 'palette-1',
-  $variant: 'primary',
-  $opacity: 1
+  $variant: 'primary'
 ) {
   $color: null;
   
@@ -17,6 +16,6 @@
 }
 
 
-@function theme-spaces($key: "primary") {
+@function theme-spaces($key: 1) {
   @return map-get($spaces, $key);
 }

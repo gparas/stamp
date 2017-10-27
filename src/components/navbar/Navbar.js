@@ -37,7 +37,7 @@ class Navbar extends Component {
     return (
       <header className={`navbar ${navbarStyle}`}>
         <a className="navbar-brand">
-          <Logo className="text-secondary"/>
+          <Logo/>
         </a>
         <div className={`navbar-collapse ${toggleMenu ? 'show' : ''}`}>
           <ul className="navbar-nav">
@@ -46,7 +46,7 @@ class Navbar extends Component {
         </div>
         {
           xRay == null ? children :
-          <button onClick={xRay} className="btn btn-primary text-small">X - RAY</button>
+          <a onClick={xRay} className="text-headline">X-RAY</a>
         }
       </header>
     );

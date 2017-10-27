@@ -4,12 +4,12 @@
 
 .btn {
   display: inline-block;
-  font-weight: 500;
+  font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  cursor: pointer;
+  height: $btn-height;
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
