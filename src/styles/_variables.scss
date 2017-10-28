@@ -116,7 +116,7 @@ $grid-gutter-width: theme-spaces(4);
 $border-width: 1px;
 $border-color: #e5e5e5;
 
-$border-radius:          4px;
+$border-radius:          2px;
 $border-radius-lg:       6px;
 $border-radius-sm:       2px;
 
@@ -163,13 +163,15 @@ $headings-color:         theme-color('dark');
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-height:            $space * 6;
 $btn-border-width:      1px;
 $btn-font-weight:       500;
 
 $btn-padding-x:         theme-spaces(3);
-$btn-padding-y:         ($btn-padding-x / 2) - $btn-border-width;
+$btn-padding-y:         ($btn-padding-x / 2);
 $btn-line-height:       $line-height-base;
+
+$btn-padding-y-lg:      theme-spaces(2);
+$btn-padding-x-lg:      theme-spaces(4);
 
 $btn-border-radius:     $border-radius;
 

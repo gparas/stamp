@@ -9,7 +9,6 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  height: $btn-height;
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
@@ -41,7 +40,7 @@
 
 @each $color, $value in $btn-colors {
   .btn-#{$color} {
-    @include button-style($value, $value);
+    @include button-style($value, #fff, $value);
   }
 }
 
@@ -49,4 +48,13 @@
   .btn-outline-#{$color} {
     @include button-outline-style($value, #fff);
   }
+}
+
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, 18px, $btn-line-height, $btn-border-radius);
 }

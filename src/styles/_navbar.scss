@@ -106,16 +106,16 @@ $navbar-height: 80px;
 }
 
 .navbar-dark{
-  color: $white;
+  color: theme-color('light');
   
   .navbar-brand{
-    color: $white;
+    color: theme-color('light');
   }
   .navbar-nav{
     .nav-link{
-      color: $white;
+      color: theme-color('light');
       &:before{
-        background-color: $white;
+        background-color: theme-color('light');
       }
     }
   }

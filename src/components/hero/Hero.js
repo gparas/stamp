@@ -9,14 +9,14 @@ class Hero extends Component {
       opacity: 0.5
     };
     return (
-      <section className="section py-5 bg-dark">
+      <section className="section py-5 py-md-6 bg-dark">
         <div className="bg-image" style={bgImage}></div>
         <div className="page-width text-center">
           <h1 className="text-white">Happy Customers</h1>
           <p className="text-lead text-white mb-lg">
             Co-ordinate campaigns and product launches, with improved overall communication.
           </p>
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary btn-lg">Buy Now</button>
         </div>
       </section>
     );
