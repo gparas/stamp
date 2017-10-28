@@ -11,5 +11,5 @@ $topbar-bg: theme-color('secondary');
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  padding: theme-spaces(1) theme-spaces(2);
+  padding: (theme-spaces(1)/2) theme-spaces(2);
 }
