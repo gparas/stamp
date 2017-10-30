@@ -40,13 +40,13 @@
 
 @each $color, $value in $btn-colors {
   .btn-#{$color} {
-    @include button-style($value, #fff, $value);
+    @include button-style($value, $value);
   }
 }
 
 @each $color, $value in $btn-colors {
   .btn-outline-#{$color} {
-    @include button-outline-style($value, #fff);
+    @include button-outline-style($value);
   }
 }
 

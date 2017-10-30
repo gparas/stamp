@@ -1,9 +1,9 @@
 $color-schemes: (
   luxury-1: (
-    muted: #a1a398,
+    muted: #A1A398,
     dark: #222845,
-    primary: #c49f66,
-    secondary: #c49f66,
+    primary: #C49F66,
+    secondary: #867583,
     light: #f2f2f2
   ),
   luxury-2: (
@@ -36,16 +36,17 @@ $color-schemes: (
   ),
   fashion-1: (
     muted: #939393,
-    dark: #000000,
+    dark: #2c2f35,
     primary: #9c0159,
     secondary: #f7b1ac,
-    light: #fff1e9
+    light: #fff9f7
   ),
   fashion-2: (
     muted: #939393,
-    dark: #000000,
+    dark: #2b2c2d,
     primary: #e80088,
-    light: #fff8ee
+    secondary: #20B2BB,
+    light: #f8f8f8
   ),
   fashion-3: (
     muted: #77726b,
@@ -58,6 +59,7 @@ $color-schemes: (
     muted: #8c8c8c,
     dark: #333333,
     primary: #fd6b54,
+    secondary: #dbf3ed,
     light: #fafaf7
   ),
   pastel-2: (
@@ -73,6 +75,20 @@ $color-schemes: (
     primary: #f16d81,
     secondary: #f8df6f,
     light: #f7f7f7
+  ),
+  modern-1: (
+    muted: #C5C1C0,
+    dark: #0A1612,
+    primary: #F7CE3E,
+    secondary: #1A2930,
+    light: #f5f5f5
+  ),
+  modern-2: (
+    muted: #C5C1C0,
+    dark: #0f1626,
+    primary: #ff533d,
+    secondary: #AB987A,
+    light: #f5f5f5
   )
 );
 

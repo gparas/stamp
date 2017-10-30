@@ -6,7 +6,7 @@ $topbar-bg: theme-color('secondary');
 
 .topbar{
   background-color: $topbar-bg;
-  color: #fff;
+  @include color-yiq($topbar-bg);
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
