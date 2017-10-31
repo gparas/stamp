@@ -35,7 +35,7 @@ const testimonials = function () {
         </div>
         <div className="card-footer card-footer-flush">
           <div className="text-headline">{item.name}</div>
-          <div className="text-small">{item.caption}</div>
+          <div className="text-small text-muted">{item.caption}</div>
         </div>
       </div>
     </div>
