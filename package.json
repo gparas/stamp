@@ -2,7 +2,7 @@
   "name": "stamp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gparas.github.io/stamp",
+  "homepage": "https://gparas.github.io/stamp/build/",
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "node-sass-chokidar": "0.0.3",
